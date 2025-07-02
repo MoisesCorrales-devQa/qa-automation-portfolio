@@ -1,13 +1,10 @@
-/** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  output: 'export',
+  images: { unoptimized: true },
   basePath: isProd ? '/qa-automation-portfolio' : '',
+  assetPrefix: isProd ? '/qa-automation-portfolio/' : '',
   trailingSlash: true,
-  images: {
-    unoptimized: true, 
-  },
 };
 
 module.exports = nextConfig;
