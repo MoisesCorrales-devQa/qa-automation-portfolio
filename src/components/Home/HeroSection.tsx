@@ -4,26 +4,29 @@ import TechStack from "./TechStack";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center text-center py-20 px-6">
+    <section className="flex flex-col items-center text-center py-20 px-4 w-full min-h-[75vh] justify-center">
       <Image
         src="/images/moises-avatar.png"
         alt="Foto de Moisés Corrales"
-        width={160}
-        height={160}
-        className="object-cover rounded-full w-[160px] h-[160px] border-4 border-blue-500 shadow-md"
+        width={152}
+        height={152}
+        className="object-cover rounded-full w-38 h-38 border-4 border-blue-500 shadow-xl transition-transform duration-200 hover:scale-105"
+        priority
       />
-      <h1 className="text-3xl md:text-5xl font-bold mt-6">Moisés Corrales</h1>
-      <h2 className="text-xl md:text-2xl text-gray-300 mt-2">
+      <h1 className="text-3xl md:text-5xl font-extrabold mt-7 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-300 bg-clip-text text-transparent drop-shadow-lg">
+        Moisés Corrales
+      </h1>
+      <h2 className="text-xl md:text-2xl text-blue-300 mt-2 font-semibold drop-shadow">
         QA Automation Engineer
       </h2>
-      <p className="mt-4 max-w-2xl text-gray-700">
-        Especializado en pruebas automatizadas para aplicaciones web y móviles.
-        Experto en Appium, Selenium, BDD, Allure, TDD...
+      <p className="mt-5 max-w-2xl text-base md:text-lg text-gray-200 font-medium leading-relaxed shadow-sm">
+        Especializado en <span className="text-blue-300 font-semibold">pruebas automatizadas</span> para aplicaciones web y móviles.<br />
+        Experto en <span className="font-semibold text-blue-200">Appium, Selenium, BDD, Allure, TDD...</span>
       </p>
 
       <CTAButton />
 
-      <div className="mt-10">
+      <div className="mt-10 w-full">
         <TechStack />
       </div>
     </section>
