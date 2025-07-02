@@ -1,9 +1,5 @@
-const isProd = process.env.NODE_ENV === 'production';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: { unoptimized: true },
-  basePath: isProd ? '/qa-automation-portfolio' : '',
-  assetPrefix: isProd ? '/qa-automation-portfolio/' : '',
   trailingSlash: true,
 };
 
