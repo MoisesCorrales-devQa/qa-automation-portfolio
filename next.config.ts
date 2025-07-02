@@ -1,8 +1,10 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
+const nextConfig = {
+  output: 'export',
+  basePath: isProd ? '/qa-automation-portfolio' : '',
+  trailingSlash: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
