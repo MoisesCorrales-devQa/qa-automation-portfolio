@@ -5,6 +5,9 @@ const nextConfig = {
   output: 'export',
   basePath: isProd ? '/qa-automation-portfolio' : '',
   trailingSlash: true,
+  images: {
+    unoptimized: true, 
+  },
 };
 
 module.exports = nextConfig;
