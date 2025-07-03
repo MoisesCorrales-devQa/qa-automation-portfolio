@@ -10,43 +10,43 @@ export default function AboutMe() {
         <div className="max-w-2xl w-full bg-black/30 rounded-2xl shadow-lg p-8 md:p-12">
           <h1 className="text-3xl md:text-5xl font-bold text-blue-300 mb-4">About Me</h1>
 
-          {/* Presentación profesional */}
+          {/* Professional introduction */}
           <p className="text-lg text-blue-100 font-semibold mb-2">
-            Ingeniero informático en proceso de especialización en QA Automation, con enfoque en testing de aplicaciones móviles y web, utilizando Appium y Selenium.
+            Computer Engineering student specializing in QA Automation, focused on automated testing for mobile and web applications using Appium and Selenium.
           </p>
 
-          {/* Diferencial/enfoque */}
+          {/* Strengths / Approach */}
           <p className="text-base text-gray-300 mb-4">
-            Me caracterizo por construir suites de pruebas sólidas, legibles y escalables, orientadas a cubrir casos funcionales reales y facilitar la integración continua. Mi atención al detalle y compromiso con las buenas prácticas permiten que los proyectos tengan una base de calidad robusta desde el inicio.
+            I am passionate about building solid, maintainable, and scalable test suites that cover real-world functional scenarios and support continuous integration. My attention to detail and commitment to best practices help establish a strong foundation of software quality from the very beginning.
           </p>
 
-          {/* Stack principal */}
+          {/* Main tech stack */}
           <div className="mb-6">
-            <h2 className="text-xl font-bold text-blue-200 mb-2">Tecnologías principales</h2>
+            <h2 className="text-xl font-bold text-blue-200 mb-2">Core Technologies</h2>
             <ul className="list-disc pl-6 text-blue-100 space-y-1">
               <li>Appium (mobile automation)</li>
               <li>Selenium WebDriver (web automation)</li>
               <li>Java</li>
-              <li>JUnit (4 y 5), Cucumber</li>
+              <li>JUnit (4 & 5), Cucumber</li>
               <li>Allure Reports</li>
               <li>Git + GitHub</li>
-              <li>CI con Maven / GitHub Actions</li>
+              <li>CI with Maven / GitHub Actions</li>
             </ul>
           </div>
 
-          {/* Motivación/corporativo */}
+          {/* Motivation */}
           <div className="mb-6">
-            <h2 className="text-xl font-bold text-blue-200 mb-2">Visión y motivación</h2>
+            <h2 className="text-xl font-bold text-blue-200 mb-2">Vision & Motivation</h2>
             <p className="text-base text-gray-300">
-              Creo firmemente que el testing automatizado es un pilar estratégico para acelerar los ciclos de desarrollo sin sacrificar la calidad del producto. Desde una perspectiva corporativa, invertir en calidad de software no solo reduce costes por errores en fases tardías, sino que potencia la confianza del cliente y la reputación de la organización. Me apasiona ayudar a los equipos a reducir el riesgo, optimizar procesos y garantizar que cada entrega esté respaldada por una cobertura de pruebas sólida y relevante para el negocio.
+              I strongly believe that automated testing is a key driver to accelerate development cycles without compromising product quality. From a business perspective, investing in software quality not only reduces costs associated with late-stage bugs but also increases customer trust and strengthens the company’s reputation. I enjoy helping teams reduce risk, optimize processes, and deliver with confidence through meaningful and effective test coverage.
             </p>
           </div>
 
-          {/* Disponibilidad */}
+          {/* Availability */}
           <div>
-            <h2 className="text-xl font-bold text-blue-200 mb-2">Disponibilidad</h2>
+            <h2 className="text-xl font-bold text-blue-200 mb-2">Availability</h2>
             <p className="text-base text-gray-300">
-              Actualmente estoy abierto a colaboraciones freelance o posiciones remotas centradas en QA Automation.
+              Currently open to freelance collaborations or remote opportunities focused on QA Automation.
             </p>
           </div>
         </div>

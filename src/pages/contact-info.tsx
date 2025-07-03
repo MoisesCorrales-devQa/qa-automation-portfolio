@@ -11,14 +11,14 @@ export default function ContactInfo() {
         <div className="max-w-lg w-full bg-black/30 rounded-2xl shadow-lg p-8 md:p-12">
           <h1 className="text-3xl md:text-5xl font-bold text-blue-300 mb-4">Contact</h1>
 
-          {/* Mensaje de bienvenida / llamada a la acción */}
+          {/* Welcome message / Call to action */}
           <p className="text-lg text-blue-100 mb-6">
-            ¿Tienes una oportunidad interesante o alguna pregunta? <br />
-            Estoy abierto a propuestas relacionadas con QA Automation, testing en apps móviles y web.<br />
-            <span className="font-semibold text-blue-200">No dudes en escribirme.</span>
+            Got an interesting opportunity or a question? <br />
+            I'm open to freelance projects, remote collaborations, or any inquiries related to QA Automation for mobile and web apps.<br />
+            <span className="font-semibold text-blue-200">Feel free to get in touch.</span>
           </p>
 
-          {/* Datos de contacto */}
+          {/* Contact details */}
           <div className="space-y-5">
             {/* Email */}
             <div className="flex items-center gap-3">
