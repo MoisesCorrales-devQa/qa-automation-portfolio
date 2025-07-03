@@ -14,7 +14,7 @@ export default function ContactInfo() {
           {/* Welcome message / Call to action */}
           <p className="text-lg text-blue-100 mb-6">
             Got an interesting opportunity or a question? <br />
-            I'm open to freelance projects, remote collaborations, or any inquiries related to QA Automation for mobile and web apps.<br />
+            I&apos;m open to freelance projects, remote collaborations, or any inquiries related to QA Automation for mobile and web apps.<br />
             <span className="font-semibold text-blue-200">Feel free to get in touch.</span>
           </p>
 
