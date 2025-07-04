@@ -1,8 +1,9 @@
 import React from "react";
 import { Project } from "@/data/projects";
+import styles from "./ProjectsSection.module.css"; 
 
 export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
-  <div className="project-card mb-10">
+  <div className={styles["project-card mb-10"]}>
     <div className="project-header">
       <h3 className="text-2xl font-bold text-gray-100">{project.title}</h3>
       <div className="text-md text-gray-400 mb-1">{project.subtitle}</div>
@@ -15,7 +16,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
             src={tech.icon}
             alt={tech.name}
             style={{ width: 40, height: 40 }}
-            className={tech.name === "Selenium" ? "selenium-icon" : ""}
+            className={tech.name === "Selenium" ? styles["selenium-icon"] : ""}
           />
           <span className="text-xs text-gray-400 mt-1">{tech.name}</span>
         </span>
