@@ -3,13 +3,13 @@ import { Project } from "@/data/projects";
 import styles from "./ProjectsSection.module.css"; 
 
 export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
-  <div className={styles["project-card mb-10"]}>
-    <div className="project-header">
+  <div className={`${styles["project-card"]} mb-10`}>
+    <div className={styles["project-header"]}>
       <h3 className="text-2xl font-bold text-gray-100">{project.title}</h3>
       <div className="text-md text-gray-400 mb-1">{project.subtitle}</div>
     </div>
     <p className="mt-2 mb-2 text-gray-200">{project.description}</p>
-    <div className="flex gap-4 mb-4 flex-wrap">
+    <div className={styles["tech-stack"]}>
       {project.technologies.map((tech) => (
         <span key={tech.name} className="flex flex-col items-center" title={tech.name}>
           <img
@@ -29,11 +29,11 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
         </li>
       ))}
     </ul>
-    <div className="flex gap-4 mt-auto">
+    <div className={styles["project-links"]}>
       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline flex items-center">
         <span className="mr-1">🔗</span> GitHub Repo
       </a>
-      <a href={project.allureUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white rounded px-2 py-1 hover:bg-blue-700 font-semibold flex items-center">
+      <a href={project.allureUrl} target="_blank" rel="noopener noreferrer" className={styles["btn-report"]}>
         <span className="mr-1">📊</span> View Allure Report
       </a>
     </div>

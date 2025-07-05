@@ -21,8 +21,7 @@ export const projects: Project[] = [
       "Automation project for the SauceDemo web app, covering the full flow: login, cart management, navigation, side menu, and checkout.",
     technologies: [
       { name: "Selenium", icon: "/icons/selenium.svg" },
-      { name: "Cucumber", icon: "/icons/cucumber.svg" },
-      { name: "JUnit 5", icon: "/icons/junit.svg" },
+      { name: "JUnit 5", icon: "/icons/junit5.svg" },
       { name: "Allure", icon: "/icons/allure.svg" },
       { name: "Java", icon: "/icons/java.svg" },
     ],
@@ -32,8 +31,8 @@ export const projects: Project[] = [
       "Modular, maintainable test suite.",
       "Full requirements traceability."
     ],
-    githubUrl: "https://github.com/tu_usuario/tu_repo_web_saucedemo",
-    allureUrl: "https://allure.tu-dominio.com/web-saucedemo"
+    githubUrl: "https://github.com/MoisesCorrales-devQa/saucedemo-qa-automation",
+    allureUrl: "https://reports.moisescorrales.com/selenium/"
   },
   {
     title: "Mobile Automation – SauceDemo",
@@ -44,6 +43,7 @@ export const projects: Project[] = [
     technologies: [
       { name: "Appium", icon: "/icons/appium.svg" },
       { name: "Cucumber", icon: "/icons/cucumber.svg" },
+      { name: "JUnit 4", icon: "/icons/junit.svg" },
       { name: "Allure", icon: "/icons/allure.svg" },
       { name: "Java", icon: "/icons/java.svg" },
     ],
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "Data context between steps.",
       "Best practices (Hooks, Page Objects, Contexts)."
     ],
-    githubUrl: "https://github.com/tu_usuario/tu_repo_mobile_saucedemo",
-    allureUrl: "https://allure.tu-dominio.com/mobile-saucedemo"
+    githubUrl: "https://github.com/MoisesCorrales-devQa/appium-saucedemo-tests",
+    allureUrl: "https://reports.moisescorrales.com/appium/"
   }
 ];
