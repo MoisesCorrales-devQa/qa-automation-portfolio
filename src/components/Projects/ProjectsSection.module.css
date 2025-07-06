@@ -2,13 +2,16 @@
   padding: 3rem 1rem;
   background: #f8f9fa;
 }
+
 .projects-list {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
+
 .project-card {
+  position: relative; 
   background: #181c25;
   border-radius: 12px;
   box-shadow: 0 4px 16px #0003;
@@ -20,45 +23,135 @@
   display: flex;
   flex-direction: column;
 }
+
 .project-header {
   margin-bottom: 0.5rem;
 }
+
 .project-header h3 {
   margin-bottom: 0.5rem;
 }
+
 .subtitle {
   font-size: 1rem;
   color: #555;
   margin-left: 0.5rem;
 }
+
 .tech-stack {
   margin: 1rem 0;
   display: flex;
   gap: 0.5rem;
 }
+
 .tech-icon {
   width: 28px;
   height: 28px;
   vertical-align: middle;
 }
+
 .project-links {
   margin-top: auto;
   display: flex;
-  gap: 1rem;
-  align-items: center;
+  flex-direction: column;
+  /* SIEMPRE EN VERTICAL */
+  gap: 0.7rem;
+  align-items: stretch;
+  /* Los botones ocupan el 100% del ancho disponible */
 }
+
 .btn-report {
-  padding: 0.3em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.5em 1em;
   background: #1a73e8;
   color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
+  border-radius: 6px;
   font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 1px 4px #0001;
+  transition: background 0.2s, transform 0.15s;
+  min-height: 40px;
+  line-height: 1.15;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  /* Ocupa todo el ancho del contenedor */
 }
-.btn-report:hover {
-  background: #0c56c0;
+
+.btn-report:hover,
+.btn-report:focus {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn-report span {
+  display: flex;
+  align-items: center;
+  font-size: 1.15em;
+}
+
+.btn-report svg,
+.btn-report img {
+  width: 19px;
+  height: 19px;
+  margin-right: 0.4em;
+  filter: brightness(0) invert(1) opacity(0.85);
 }
 
 .selenium-icon {
   filter: brightness(0) invert(1);
+}
+.project-card {
+  background: #181c25cc;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0003;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+}
+/*
+.project-card:hover {
+  box-shadow: 0 8px 32px #0007;
+  border-color: #2563eb66;
+  transform: translateY(-3px) scale(1.02);
+}*/
+.project-header h3 {
+  letter-spacing: 0.03em;
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+.text-md {
+  color: #6da8ff;
+  font-weight: 400;
+  font-size: 1.09rem;
+  margin-bottom: 0.3em;
+}
+.btn-report {
+  /* ...actual... */
+  box-shadow: 0 2px 8px #2563eb22;
+  border-left: 3px solid #fff3;
+}
+
+.badges {
+  position: absolute;
+  top: 0.1rem;         /* Más arriba */
+  right: 0.1rem;       /* Más a la derecha */
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;       /* Menos separación */
+  z-index: 2;
+  align-items: flex-end; /* Para que estén alineadas a la derecha */
+}
+
+.badge-wip {
+  background: #ed6c02;
+  color: #fff;
+}
+
+.badge-demo {
+  background: #388e3c;
+  color: #fff;
 }

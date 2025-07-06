@@ -1,5 +1,6 @@
 export interface Project {
   title: string;
+  caseStudyUrl: string,
   type: "Web Automation" | "Mobile Automation";
   subtitle: string;
   description: string;
@@ -14,7 +15,8 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Web Automation – SauceDemo",
+    title: "Web Automation SauceDemo",
+    caseStudyUrl: "/case-studies/appium",
     type: "Web Automation",
     subtitle: "Selenium + Cucumber",
     description:
@@ -35,7 +37,8 @@ export const projects: Project[] = [
     allureUrl: "https://reports.moisescorrales.com/selenium/"
   },
   {
-    title: "Mobile Automation – SauceDemo",
+    title: "Mobile Automation SauceDemo",
+    caseStudyUrl: "/case-studies/selenium",
     type: "Mobile Automation",
     subtitle: "Appium + Cucumber",
     description:

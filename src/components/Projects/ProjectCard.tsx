@@ -1,12 +1,21 @@
 import React from "react";
 import { Project } from "@/data/projects";
-import styles from "./ProjectsSection.module.css"; 
+import styles from "./ProjectsSection.module.css";
+import Link from "next/link";
+import { ProjectStatusBadges } from "./ProjectStatusBadges";
+
+
 
 export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
   <div className={`${styles["project-card"]} mb-10`}>
+    {/* Badges */}
+    <div className={styles["badges"]}>
+      <ProjectStatusBadges />
+    </div>
     <div className={styles["project-header"]}>
-      <h3 className="text-2xl font-bold text-gray-100">{project.title}</h3>
-      <div className="text-md text-gray-400 mb-1">{project.subtitle}</div>
+      <h3 className="text-2xl font-bold text-gray-100 max-w-xs break-words">
+        {project.title}
+      </h3>      <div className={`${styles["text-md"]} text-gray-400 mb-1`}>{project.subtitle}</div>
     </div>
     <p className="mt-2 mb-2 text-gray-200">{project.description}</p>
     <div className={styles["tech-stack"]}>
@@ -30,12 +39,28 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
       ))}
     </ul>
     <div className={styles["project-links"]}>
-      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline flex items-center">
-        <span className="mr-1">🔗</span> GitHub Repo
+      <a
+        href={project.githubUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles["btn-report"]}
+      >
+        <img src="/icons/github.svg" alt="GitHub" className={styles["icon"]} />
+        GitHub Repo
       </a>
-      <a href={project.allureUrl} target="_blank" rel="noopener noreferrer" className={styles["btn-report"]}>
-        <span className="mr-1">📊</span> View Allure Report
+      <a
+        href={project.allureUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles["btn-report"]}
+      >
+        <img src="/icons/allure.svg" alt="Allure" className={styles["icon"]} />
+        View Allure Report
       </a>
+      <Link href={project.caseStudyUrl} className={styles["btn-report"]}>
+        <img src="/icons/doc.svg" alt="Case Study" className={styles["icon"]} />
+        Case Study
+      </Link>
     </div>
   </div>
 );
