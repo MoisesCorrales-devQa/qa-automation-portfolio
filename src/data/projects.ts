@@ -23,7 +23,7 @@ export const projects: Project[] = [
       "Automation project for the SauceDemo web app, covering the full flow: login, cart management, navigation, side menu, and checkout.",
     technologies: [
       { name: "Selenium", icon: "/icons/selenium.svg" },
-      { name: "JUnit 5", icon: "/icons/junit5.svg" },
+      { name: "JUnit 5", icon: "/icons/junit_five.svg" },
       { name: "Allure", icon: "/icons/allure.svg" },
       { name: "Java", icon: "/icons/java.svg" },
     ],
