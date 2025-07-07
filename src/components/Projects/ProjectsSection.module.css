@@ -158,9 +158,9 @@
 
 
 .btn-report:first-child {
-  background-color: #6f25b9; /* Indigo 500 */
+  background-color: #6f25b9; 
 }
 
 .btn-report:first-child:hover {
-  background-color: #5e1fa1; /* Indigo 600 */
+  background-color: #5e1fa1; 
 }

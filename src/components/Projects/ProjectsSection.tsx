@@ -1,7 +1,6 @@
 import React from "react";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
-import styles from "./ProjectsSection.module.css";
 
 export const ProjectsSection: React.FC = () => (
   <section className="flex flex-col items-center py-10 px-2 min-h-screen">
