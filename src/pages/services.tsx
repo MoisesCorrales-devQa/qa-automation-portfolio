@@ -94,13 +94,17 @@ export default function ServicesPage() {
 
           {/* CTA */}
           <div className="mb-10 text-center">
-            <h2 className="text-xl font-bold text-blue-200 mb-4">Want to improve your app s testing process?</h2>
-            <a
-              href="/contact"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-500 transition font-bold text-lg shadow-lg"
+            <h2 className="text-xl font-bold text-blue-200 mb-4">Want to improve your app&apos;s testing process?</h2>
+
+            <Link
+                href="/contact"
+                className="contact-button"
+                target="_blank"
+                rel="noopener noreferrer"
             >
               📧 Contact Me
-            </a>
+            </Link>
+
           </div>
 
           {/* Example Projects (optional) */}
