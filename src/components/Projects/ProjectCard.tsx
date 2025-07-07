@@ -39,6 +39,12 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
       ))}
     </ul>
     <div className={styles["project-links"]}>
+      <Link href={project.caseStudyUrl} className={`${styles["btn-report"]} ${styles["case-study"]}`}>
+        <img src="/icons/doc.svg" alt="Case Study" className={styles["icon"]} />
+        Case Study
+      </Link>
+
+
       <a
         href={project.githubUrl}
         target="_blank"
@@ -57,10 +63,6 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
         <img src="/icons/allure.svg" alt="Allure" className={styles["icon"]} />
         View Allure Report
       </a>
-      <Link href={project.caseStudyUrl} className={styles["btn-report"]}>
-        <img src="/icons/doc.svg" alt="Case Study" className={styles["icon"]} />
-        Case Study
-      </Link>
     </div>
   </div>
 );

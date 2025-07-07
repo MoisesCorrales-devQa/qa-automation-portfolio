@@ -16,7 +16,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Web Automation SauceDemo",
-    caseStudyUrl: "/case-studies/appium",
+    caseStudyUrl: "/seleniumProject",
     type: "Web Automation",
     subtitle: "Selenium + Cucumber",
     description:
@@ -38,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     title: "Mobile Automation SauceDemo",
-    caseStudyUrl: "/case-studies/selenium",
+    caseStudyUrl: "/appiumProject",
     type: "Mobile Automation",
     subtitle: "Appium + Cucumber",
     description:
