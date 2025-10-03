@@ -12,7 +12,7 @@ export default function AboutMe() {
 
           {/* Professional introduction */}
           <p className="text-lg text-blue-100 font-semibold mb-2">
-            Computer Engineering student specializing in QA Automation, focused on automated testing for mobile and web applications using Appium and Selenium.
+            Software Engineer specializing in QA Automation, focused on automated testing for mobile and web applications using Appium and Selenium.
           </p>
 
           {/* Strengths / Approach */}

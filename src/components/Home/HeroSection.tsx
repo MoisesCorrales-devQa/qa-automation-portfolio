@@ -17,7 +17,7 @@ export default function HeroSection() {
                 Moisés Corrales
             </h1>
             <h2 className="text-xl md:text-2xl text-blue-300 mt-2 font-semibold drop-shadow">
-                Aspiring QA Automation Engineer
+                QA Automation Engineer
             </h2>
             <p className="mt-5 max-w-2xl text-base md:text-lg text-gray-200 font-medium leading-relaxed shadow-sm">
                 Specializing in <span className="text-blue-300 font-semibold">automated testing</span> for web and
