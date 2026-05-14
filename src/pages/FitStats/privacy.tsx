@@ -143,10 +143,10 @@ const sections = [
           Para solicitudes relacionadas con privacidad o eliminación de datos, el
           usuario puede contactar en{" "}
           <a
-            href="mailto:TU_EMAIL_DE_SOPORTE"
+            href="mailto:moisescorrales.testing@gmail.com"
             className="font-semibold text-emerald-300 underline decoration-emerald-500/50 underline-offset-4 hover:text-emerald-200"
           >
-            TU_EMAIL_DE_SOPORTE
+            moisescorrales.testing@gmail.com
           </a>
           .
         </p>
@@ -183,10 +183,10 @@ const sections = [
         tratamiento de datos en FitStats, puedes contactar con el desarrollador
         en{" "}
         <a
-          href="mailto:TU_EMAIL_DE_SOPORTE"
+          href="mailto:moisescorrales.testing@gmail.com"
           className="font-semibold text-emerald-300 underline decoration-emerald-500/50 underline-offset-4 hover:text-emerald-200"
         >
-          TU_EMAIL_DE_SOPORTE
+          moisescorrales.testing@gmail.com
         </a>
         .
       </p>
@@ -230,10 +230,10 @@ export default function FitStatsPrivacyPolicy() {
               <p className="sm:col-span-2">
                 <span className="font-semibold text-slate-100">Contacto:</span>{" "}
                 <a
-                  href="mailto:TU_EMAIL_DE_SOPORTE"
+                  href="mailto:moisescorrales.testing@gmail.com"
                   className="font-semibold text-emerald-300 underline decoration-emerald-500/50 underline-offset-4 hover:text-emerald-200"
                 >
-                  TU_EMAIL_DE_SOPORTE
+                  moisescorrales.testing@gmail.com
                 </a>
               </p>
             </div>
